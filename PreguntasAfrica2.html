@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>África</title>
+	<meta charset="utf-8">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Juego de preguntas de África</h1>
+	</header>
+  <main>
+    <div id="question">2. ¿Qué animal tiene manchas y es conocido por ser el animal más rápido de África?</div>
+    <div id="choices">
+      <button id="elefante" type="button" value="incorrecto">antilope</button>
+      <button id="jirafa" type="button" value="correcto">guepardo</button>
+      <button id="hipopotamo" type="button" value="incorrecto">Ñu</button>      
+    </div>
+    <div id="resultado"></div>
+    <img id="imagen" src="" alt="">    
+  </main>
+
+  <script>
+    // Agrega un evento de clic a cada botón
+    document.getElementById("elefante").addEventListener("click", verificarRespuesta);
+    document.getElementById("jirafa").addEventListener("click", verificarRespuesta);
+    document.getElementById("hipopotamo").addEventListener("click", verificarRespuesta);
+
+    function verificarRespuesta(event) {
+      // Obtiene el valor de la respuesta seleccionada por el usuario
+      var respuestaUsuario = event.target.value;
+      
+      // Comprueba si la respuesta es correcta o incorrecta
+      if (respuestaUsuario === "correcto") {
+        document.getElementById("resultado").innerHTML = "¡Correcto!";
+        document.getElementById("imagen").src = "Imagenes/guepardo.jpg";                
+      } else {
+        document.getElementById("resultado").innerHTML = "Incorrecto :(";
+      }
+    }
+  </script>
+
+  <nav class="nav-bar">
+    <button class="nav-btn"><a href="index.html" class="nav-link"> < Anterior</a></button>
+    <button class="nav-btn"><a href="index.html" class="nav-link">Inicio</a></button>
+    <button class="nav-btn"><a href="PreguntasAfrica3.html" class="nav-link">Siguiente > </a></button>
+	</nav>
+	
+	<footer>
+		<p>&copy; 2023 	Consolación Burriana</p>
+	</footer>
+
+	<script src="script.js"></script>
+   
+</body>
+</html>

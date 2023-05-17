@@ -1,0 +1,139 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* Colores */
+:root {
+  --dark-blue: #072146;
+  --light-blue: #3B75CC;
+  --gold: #DAA520;
+  --light-gold: #F6D367;
+  --white: #ffffff;
+}
+
+
+
+/* Fondo y texto */
+body {
+  width: 960px;
+  height: 960px;
+  margin: 0 auto;
+  background-color: #e9b158;
+  background-image: url('Imagenes/africa-bg.jpg');
+  background-size: 960px 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Encabezado */
+header {
+  background-color: var(--dark-blue);
+  padding: 35px;
+}
+
+/* Título */
+h1 {
+  font-size: 48px;
+  margin: 0;
+  text-align: center;
+  text-shadow: 2px 2px 0 var(--light-blue);
+}
+
+main {
+  width: 960px;
+  height: 550px;
+  margin: 0 auto;
+}
+/* Pregunta */
+#question {
+  background-color: var(--light-gold);
+  border-radius: 10px;
+  font-size: 36px;
+  margin: 50px auto 20px;
+  max-width: 800px;
+  padding: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 0 var(--light-blue);
+}
+
+/* Opciones */
+#choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+/* Botón */
+button {
+  background-color: #db471a;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 24px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--gold);
+}
+
+/* Resultado */
+#resultado {
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 0 var(--light-blue);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between; /* distribuye los elementos de forma equitativa */
+  align-items: center; /* centra verticalmente los elementos */
+  padding: 10px;
+}
+
+.nav-btn {
+background-color: var(--light-blue);
+  font-size: 18px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30%;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--dark-blue);
+  padding: 20px;
+
+  bottom: 0;
+
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
